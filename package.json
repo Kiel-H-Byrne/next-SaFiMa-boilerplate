@@ -1,0 +1,123 @@
+{
+  "name": "HighLyfe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "@date-io/core": "^1.3.9",
+    "@date-io/date-fns": "^1.3.9",
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/icons": "^4.0.1",
+    "@material-ui/pickers": "^3.2.2",
+    "@material-ui/styles": "^4.0.1",
+    "@react-google-maps/api": "^1.2.3-alpha.11",
+    "@welldone-software/why-did-you-render": "^3.3.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/webpack-asset-relocator-loader": "0.5.8",
+    "body-parser": "^1.19.0",
+    "chroma-js": "^2.0.3",
+    "connected-react-router": "^6.3.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.0.0-beta.2",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "final-form": "^4.18.2",
+    "firebase": "^6.3.1",
+    "history": "^4.9.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "material-table": "^1.38.0",
+    "next": "^9.0.4-canary.2",
+    "next-redux-saga": "^4.0.2",
+    "next-redux-wrapper": "^3.0.0-alpha.3",
+    "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-big-calendar": "^0.22.0",
+    "react-devtools": "^3.6.1",
+    "react-dom": "^16.8.4",
+    "react-final-form": "^6.3.0",
+    "react-flip-toolkit": "^6.6.2",
+    "react-loader-spinner": "^2.3.0",
+    "react-markdown": "^4.0.8",
+    "react-redux": "^7.1.0-rc.1",
+    "react-redux-firebase": "^2.3.0",
+    "react-router-dom": "^5.0.1",
+    "react-router-redux": "^4.0.8",
+    "react-stripe-elements": "^4.0.0",
+    "react-text-mask": "^5.4.3",
+    "recharts": "^1.5.0",
+    "redux": "^4.0.1",
+    "redux-devtools": "^3.5.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2",
+    "redux-starter-kit": "^0.6.2",
+    "stripe": "^7.8.0"
+  },
+  "scripts": {
+    "dev": "node server/main.js",
+    "inspect": "node --inspect server/main.js",
+    "start": "$NODE_ENV=production node server/main.js",
+    "build": "next build",
+    "export": "next export",
+    "now-build": "next build && next export -o build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "react",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+      }
+    }
+  },
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "postcss-css-variables": "^0.13.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  }
+}

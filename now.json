@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@now/next@canary", "config": { "distDir": "build" } }, 
+            { "src": "static/sitemap.xml", "use": "@now/static" }],
+  "routes": [{ "src": "/sitemap.xml", "dest": "/static/sitemap.xml" }],
+  "build": {
+    "env": {
+      
+    }
+  }
+}
